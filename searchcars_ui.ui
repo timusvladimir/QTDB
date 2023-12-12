@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1121</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Покупка автомобилей</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{background-color:green}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Mongolian Baiti</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>                                                                         Менеджер покупки автомобилей</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">tabWidget{background-color:rgb(193, 255, 200)}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Поиск</string>
+       </attribute>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>771</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>Производитель</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Тип</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Модель</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Регион</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Цена</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Центр дилера</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Дата покупки</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>771</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pushButtonAdd">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+background-color: yellow;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 5em;
+    padding: 6px;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Добавить модель</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonChange">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+background-color: yellow;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 5em;
+    padding: 5px;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Редактировать модель</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonDel">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+background-color: yellow;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 5em;
+    padding: 5px;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Удалить модель</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButtonUpdate">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+background-color: yellow;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 5em;
+    padding: 5px;;
+}</string>
+           </property>
+           <property name="text">
+            <string>Обновить таблицу</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QSplitter" name="splitter">
+        <property name="geometry">
+         <rect>
+          <x>795</x>
+          <y>10</y>
+          <width>291</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>                      ИЗОБРАЖЕНИЕ АВТОМОБИЛЯ</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>                                 ТХ АВТОМОБИЛЯ</string>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>480</y>
+          <width>771</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Модель</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Тип</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Регион</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="comboBoxProizvod"/>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Производитель</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QComboBox" name="comboBoxType"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="QComboBox" name="comboBoxRegion"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBoxModel"/>
+         </item>
+         <item row="1" column="4">
+          <widget class="QPushButton" name="pushButtonFilter">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-color: rgb(118, 49, 255);
+	border-radus: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Фильтр</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="5">
+          <widget class="QPushButton" name="pushButtonClsFilter">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	background-color: rgb(118, 49, 255);
+	border-radus: 10px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Сбросить фильтр</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>О программе</string>
+       </attribute>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>80</y>
+          <width>381</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Reference Sans Serif</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Менеджер покупки автомобилей</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelGif">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>120</y>
+          <width>521</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
